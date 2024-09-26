@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Key Industry Metrics</title>
+    <link rel="stylesheet" href="kims_style.css">
+</head>
+
+
+<body>
+
+    <!-- Sticky and transparent navigation panel -->
+    <header class="nav-panel">
+
+        <!-- This is the main Logo -->
+        <div class="logo">
+        </div>
+
+        <!-- This is the tab panel to the right -->
+        <ul class="tabs">
+            <li class="tab"><a href="#img_16">Evaluation</a></li>
+            <li class="tab"><a href="#img_9">Design</a></li>
+            <li class="tab"><a href="#img_3">Discovery</a></li>
+        </ul>
+    </header>
+
+
+    <!-- This main container houses the stitched image at the center -->
+    <div class="main_container">
+
+        <!-- This is the stitched image -->
+        <div class="stitched_image">
+            <div id="img_0" class="image"></div>
+            <div id="img_1" class="image"></div>
+            <div id="img_2" class="image"></div>
+            <div id="img_3" class="image"></div>
+            <div id="img_4" class="image"></div>
+            <div id="img_5" class="image"></div>
+            <div id="img_6" class="image"></div>
+            <div id="img_7" class="image"></div>
+            <div id="img_8" class="image"></div>
+            <div id="img_9" class="image"></div>
+            <div id="img_10" class="image"></div>
+            <div id="img_11" class="image"></div>
+            <div id="img_12" class="image"></div>
+            <div id="img_13" class="image"></div>
+            <div id="img_14" class="image"></div>
+            <div id="img_15" class="image"></div>
+            <div id="img_16" class="image"></div>
+            <div id="img_17" class="image"></div>
+            <div id="img_18" class="image"></div>
+            <div id="img_19" class="image"></div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <!-- PASSWORD DETAILS -->
+        <div class="footer_password_details">
+
+            <!-- PASSWORD SECTION -->
+            <div class="password_section">
+
+                <p id="password_prompt">Enter the password to view this project in depth:</p>
+
+                <div class="input_area_and_error_message">
+
+                    <div class="input_and_submit_button">
+
+                        <input type="password" id="passwordInput" placeholder="Enter password" class="input_area">
+
+                        <button onclick="checkPassword()" class="submit_button">Submit</button>
+
+                    </div>
+
+                    <p id="error_message" style="display: none;">Incorrect password!</p>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTNOTE -->
+            <div id="footer_1" class="footnote">
+
+                <p class="footnote_entry">&copy; 2024</p>
+
+                <!-- SEPARATOR -->
+                <svg id="separator" class="footnote_entry" xmlns="http://www.w3.org/2000/svg" width="1" height="16"
+                    viewBox="0 0 1 24" fill="none">
+                    <rect width="1" height="24" rx="0.5" fill="white" />
+                </svg>
+
+                <p class="footnote_entry">Designed and developed by Shobhit Kenath</p>
+
+            </div>
+
+        </div>
+
+        <!-- BACK TO TOP BUTTON -->
+        <div class="back_to_top_button">
+
+            <!-- SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="81" height="48" viewBox="0 0 81 48" fill="none">
+                <path
+                    d="M40.1563 0.480469C40.1563 0.480469 36.0086 3.37843 34.8501 6.19475C34.1124 7.98811 34.8501 9.46006 34.8501 9.46006L33.6256 10.6846C33.6256 10.6846 28.6826 9.31256 25.4624 9.46006C20.9525 9.66663 18.2993 11.1993 14.7525 13.2481C14.1365 13.6039 13.4936 13.9753 12.8093 14.358C7.26902 17.4567 0.15625 24.5621 0.15625 24.5621C0.15625 24.5621 3.74993 28.7884 6.68686 30.6846C6.99044 30.8805 7.27139 31.0683 7.53881 31.247C8.85401 32.1259 9.84192 32.7861 11.5848 33.1335C15.3431 33.8827 32.8093 24.5621 32.8093 24.5621L34.442 26.6029C34.442 26.6029 33.3095 32.5685 31.5848 35.9907C29.8918 39.3501 26.6869 42.5213 26.6869 42.5213C26.6869 42.5213 29.6997 45.1495 31.993 46.1948C34.9513 47.5431 40.1563 47.8274 40.1563 47.8274C40.1563 47.8274 45.3612 47.5431 48.3195 46.1948C50.6128 45.1495 53.6256 42.5213 53.6256 42.5213C53.6256 42.5213 50.4207 39.3501 48.7277 35.9907C47.003 32.5685 45.8705 26.6029 45.8705 26.6029L47.5032 24.5621C47.5032 24.5621 64.9694 33.8827 68.7277 33.1335C70.4706 32.7861 71.4585 32.1259 72.7737 31.247C73.0411 31.0683 73.3221 30.8806 73.6256 30.6846C76.5626 28.7884 80.1563 24.5621 80.1563 24.5621C80.1563 24.5621 73.0435 17.4567 67.5032 14.358C66.8189 13.9753 66.176 13.6039 65.56 13.2481C62.0132 11.1993 59.36 9.66663 54.8501 9.46006C51.6299 9.31256 46.6869 10.6846 46.6869 10.6846L45.4624 9.46006C45.4624 9.46006 46.2001 7.98811 45.4624 6.19475C44.3039 3.37843 40.1563 0.480469 40.1563 0.480469Z"
+                    fill="white" />
+            </svg>
+
+            <p>Back to Top</p>
+
+        </div>
+
+    </div>
+
+    <script src="kims_app.js"></script>
+
+</body>
+
+</html>
