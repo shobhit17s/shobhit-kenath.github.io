@@ -17,7 +17,7 @@ for (let i = 0; i < mainGlow.length; i++) {
         // console.log(x);
         // console.log(y);
 
-        const colorChoices = ['#956AC6', '#C33354', '#10AF20']
+        const colorChoices = ['#4DA3D6', '#C33354', '#10AF20']
 
         this.style.background = `radial-gradient(circle 400px at ${x}px ${y}px, ${colorChoices[i]}, transparent)`;
         this.style.opacity = .25;
@@ -60,7 +60,7 @@ mainGlowSmall.forEach(
             const b = Math.round((x / area.offsetWidth) * 255);
 
             // Apply the new background color based on the mouse position
-            area.style.background = `radial-gradient(circle 400px at ${x}px ${y}px, #F41B2C, transparent)`;
+            area.style.background = `radial-gradient(circle 400px at ${x}px ${y}px, #FC9516, transparent)`;
             // area.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
 

@@ -1,3 +1,9 @@
+:root {
+    --grey-50: #CED2D9;
+    --grey-400: #44484F;
+    --grey-800: #242526;
+}
+
 /* Global Styles */
 * {
     margin: 0;
@@ -6,12 +12,7 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     width: 100%;
-    font-family: Arial, sans-serif;
 }
 
 html {
@@ -23,10 +24,9 @@ html {
 /* Navigation Panel */
 .nav-panel {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
 
-    /* Dimensions */
     width: 100%;
     height: 64px;
     padding-top: 0px;
@@ -34,15 +34,12 @@ html {
     padding-right: 6.5%;
     padding-bottom: 0px;
 
-    /* Making it sticky */
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    /* Transparent */
     background-color: rgba(0, 0, 0, 0.85);
 
-    /* Cool Shadow */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -50,6 +47,8 @@ html {
     width: 64px;
     height: 64px;
     background-color: #1F589A;
+
+    display: none;
 }
 
 .tabs {
@@ -69,8 +68,6 @@ html {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 
-
-    /* Dimensions */
     height: 52px;
     margin-left: 8px;
     padding-left: 12px;
@@ -78,7 +75,6 @@ html {
     padding-top: 4px;
     padding-bottom: 4px;
 
-    /* Adding a transition for hover */
     transition: border-bottom .5s, background-color .5s;
 }
 
@@ -90,6 +86,9 @@ html {
 .tab a {
     color: #fff;
     text-decoration: none;
+
+
+    font-family: 'montserrat', sans-serif;
     font-size: 18px;
     transition: color 0.5s;
 }
@@ -106,202 +105,7 @@ html {
     background-color: white;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------FOOTER WITH PASSWORD ENTRY (START)--------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* Footer */
-.footer {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    /* min-height: 32px; */
-    text-align: center;
-
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    background-color: #000601;
-}
-
-.footer_password_details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    margin-right: 24px;
-    gap: 64px;
-}
-
-.password_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    gap: 20px;
-}
-
-.input_area_and_error_message {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    width: 100%;
-    gap: 8px;
-}
-
-.input_and_submit_button {
-    display: flex;
-    align-items: center;
-
-    width: 100%;
-    gap: 8px;
-}
-
-.input_area {
-    flex-grow: 1;
-    height: 40px;
-
-    border-radius: 8px;
-    padding: 8px;
-
-    font-size: 16px;
-}
-
-.submit_button {
-    min-width: 80px;
-    height: 40px;
-    padding: 4px;
-
-    background-color: #44484F;
-    border-radius: 4px;
-
-
-
-    color: white;
-    font-size: 16px;
-}
-
-#password_prompt {
-    color: white;
-    font-size: 24px;
-    text-align: left;
-}
-
-#error_message {
-    font-size: 16px;
-    color: #EC7984;
-    mix-blend-mode: exclusion;
-}
-
-.back_to_top_button {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    border-radius: 4px;
-    background-color: black;
-    gap: 1.2em;
-    padding: 1.2em;
-}
-
-.back_to_top_button p {
-    font-family: 'roboto-thin', sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 1em;
-}
-
-.contact_header_panel {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    padding: 12px;
-    border-bottom: 1px solid white;
-    border-top-left-radius: 4;
-    border-top-right-radius: 4px;
-}
-
-.list_of_contact_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    flex-grow: 1;
-
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 4px;
-
-    margin-top: 24px;
-}
-
-.contact_item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    width: 100%;
-    padding: 8px;
-    border: 0.5px solid white;
-    border-radius: 2px;
-
-    margin-top: 12px;
-}
-
-
-/* FONT TEXT COLOR IN FOOTER */
-.contact_details_heading_font {
-    color: white;
-}
-
-.contact_item p {
-    color: white;
-}
-
-.footnote_entry {
-    color: white;
-}
-
-/* FONT TEXT COLOR IN FOOTER */
-
-
-.contact_item:nth-of-type(1) {
-    margin-top: 0;
-}
-
-.footnote {
-    display: flex;
-    align-items: center;
-
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.footnote_entry {
-    margin-right: 16px;
-}
-
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------FOOTER WITH PASSWORD ENTRY (END)----------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-
-
-/* The stitched image container */
 .stitched_image {
     display: flex;
     flex-direction: column;
@@ -313,17 +117,13 @@ html {
     max-width: 1920px;
 }
 
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Individual images */
 .image {
     width: 100%;
 
-    /* This ensures that the images scale when resized */
     background-size: contain;
 }
 
-/* Each image's height has been adjusted in terms of it's aspect ratio */
+
 #img_0 {
     background-image: url('assets/kims/0.png');
     aspect-ratio: 1920 / 3149;
@@ -422,4 +222,345 @@ html {
 #img_19 {
     background-image: url('assets/kims/19.png');
     aspect-ratio: 1920 / 1080;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    text-align: center;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-color: #000601;
+}
+
+.footer_password_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-right: 24px;
+    gap: 4em;
+}
+
+.password_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.input_area_and_error_message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    gap: 8px;
+}
+
+.input_and_submit_button {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    gap: 8px;
+}
+
+.input_area {
+    flex-grow: 1;
+    height: 40px;
+
+    border-radius: 8px;
+    padding: 8px;
+
+    font-size: 16px;
+}
+
+.submit_button {
+    min-width: 80px;
+    height: 40px;
+    padding: 4px;
+
+    background-color: #44484F;
+    border-radius: 4px;
+
+    color: white;
+    font-size: 16px;
+}
+
+#password_prompt {
+    color: white;
+    font-family: 'montserrat-light', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#error_message {
+    font-family: 'montserrat-light', sans-serif;
+    font-size: 16px;
+    color: #EC7984;
+    mix-blend-mode: exclusion;
+}
+
+.footnote {
+    display: flex;
+    align-items: center;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.footnote_entry {
+    color: var(--grey-400);
+    font-family: 'roboto-thin', sans-serif;
+    font-size: 1.2em;
+    margin-right: 16px;
+}
+
+.back_to_top_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 4px;
+    background-color: black;
+    gap: 1.2em;
+    padding: 1.2em;
+
+    transition: all .3s ease;
+}
+
+.back_to_top_button p {
+    font-family: 'roboto-thin', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.back_to_top_button:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------RESPONSIVE DESIGN (MOBILE; PORTRAIT)------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 480px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+        text-align: center;
+
+        gap: 2.4em;
+
+        padding: 40px;
+
+        width: 100%;
+
+        background-color: #000601;
+    }
+
+    .footer_password_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        width: unset;
+
+        margin-right: 24px;
+        gap: 4em;
+    }
+
+    .password_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .input_area_and_error_message {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        width: 100%;
+        gap: 8px;
+    }
+
+    .input_and_submit_button {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        gap: 8px;
+    }
+
+    .input_area {
+        flex-grow: 1;
+        height: 40px;
+
+        border-radius: 8px;
+        padding: 8px;
+
+        font-size: 16px;
+    }
+
+    .submit_button {
+        min-width: 80px;
+        height: 40px;
+        padding: 4px;
+
+        background-color: #44484F;
+        border-radius: 4px;
+
+        color: white;
+        font-size: 16px;
+    }
+
+    #password_prompt {
+        color: white;
+        font-size: 1.4em;
+        text-align: left;
+    }
+
+    #error_message {
+        font-size: 1.2em;
+        color: #EC7984;
+        mix-blend-mode: exclusion;
+    }
+
+    .footnote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 1.6em;
+
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    #separator {
+        display: none;
+    }
+
+    .footnote_entry {
+        color: var(--grey-400);
+        font-size: 1.2em;
+        margin-right: 16px;
+    }
+
+    .back_to_top_button {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        border-radius: 4px;
+        background-color: black;
+        gap: 1.2em;
+        padding: 1.2em;
+
+        transition: all .3s ease;
+    }
+
+    .back_to_top_button p {
+        font-family: 'roboto-thin', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 1em;
+    }
+
+    .back_to_top_button:hover {
+
+        transform: scale(1.1);
+
+    }
+
 }
