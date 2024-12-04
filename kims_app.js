@@ -12,7 +12,7 @@ for (let i = 0; i < allImages.length; i++) {
 }
 
 function checkPassword() {
-    const correctPassword = "test";  // Replace with your password
+    const correctPassword = "kims#2024";  // Replace with your password
     const inputPassword = document.getElementById("passwordInput").value;
     const errorMessage = document.getElementById("error_message");
 

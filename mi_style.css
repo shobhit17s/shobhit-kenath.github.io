@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --grey-50: #CED2D9;
     --grey-400: #44484F;
     --grey-800: #242526;
@@ -87,7 +87,6 @@ html {
     color: #fff;
     text-decoration: none;
 
-
     font-family: 'montserrat', sans-serif;
     font-size: 18px;
     transition: color 0.5s;
@@ -112,117 +111,151 @@ html {
     justify-content: flex-start;
     align-items: center;
 
-    /* Dimensions */
     width: 100%;
     max-width: 1920px;
 }
 
+
 .image {
     width: 100%;
-
     background-size: contain;
 }
 
-
 #img_0 {
-    background-image: url('assets/kims/0.png');
-    aspect-ratio: 1920 / 3149;
+    background-image: url('assets/mi/0.png');
+    aspect-ratio: 3 / 5;
 }
 
 #img_1 {
-    background-image: url('assets/kims/1.png');
+    background-image: url('assets/mi/1.png');
     aspect-ratio: 1920 / 2160;
 }
 
 #img_2 {
-    background-image: url('assets/kims/2.png');
-    aspect-ratio: 1920 / 2160;
+    background-image: url('assets/mi/2.png');
+    aspect-ratio: 1920 / 1939;
 }
 
 #img_3 {
-    background-image: url('assets/kims/3.png');
+    background-image: url('assets/mi/3.png');
     aspect-ratio: 1920 / 1080;
 }
 
 #img_4 {
-    background-image: url('assets/kims/4.png');
-    aspect-ratio: 1920 / 2160;
+    background-image: url('assets/mi/4.png');
+    aspect-ratio: 1920 / 2335;
 }
 
 #img_5 {
-    background-image: url('assets/kims/5.png');
-    aspect-ratio: 1920 / 3699;
+    background-image: url('assets/mi/5.png');
+    aspect-ratio: 1920 / 1080;
 }
 
 #img_6 {
-    background-image: url('assets/kims/6.png');
-    aspect-ratio: 1920 / 1866;
+    background-image: url('assets/mi/6.png');
+    aspect-ratio: 1920 / 2780;
 }
 
 #img_7 {
-    background-image: url('assets/kims/7.png');
-    aspect-ratio: 1920 / 2650;
+    background-image: url('assets/mi/7.png');
+    aspect-ratio: 1920 / 3436;
 }
 
 #img_8 {
-    background-image: url('assets/kims/8.png');
+    background-image: url('assets/mi/8.png');
     aspect-ratio: 1920 / 1080;
 }
 
 #img_9 {
-    background-image: url('assets/kims/9.png');
+    background-image: url('assets/mi/9.png');
     aspect-ratio: 1920 / 1080;
 }
 
 #img_10 {
-    background-image: url('assets/kims/10.png');
-    aspect-ratio: 1920 / 1080;
+    background-image: url('assets/mi/10.png');
+    aspect-ratio: 1920 / 1287;
 }
 
 #img_11 {
-    background-image: url('assets/kims/11.png');
-    aspect-ratio: 1920 / 2318;
+    background-image: url('assets/mi/11.png');
+    aspect-ratio: 1920 / 1767;
 }
 
 #img_12 {
-    background-image: url('assets/kims/12.png');
-    aspect-ratio: 1920 / 1808;
+    background-image: url('assets/mi/12.png');
+    aspect-ratio: 1920 / 3893.83;
 }
 
 #img_13 {
-    background-image: url('assets/kims/13.png');
-    aspect-ratio: 1920 / 3136;
+    background-image: url('assets/mi/13.png');
+    aspect-ratio: 1920 / 3403.96;
 }
 
 #img_14 {
-    background-image: url('assets/kims/14.png');
-    aspect-ratio: 1920 / 3413.5;
+    background-image: url('assets/mi/14.png');
+    aspect-ratio: 1920 / 1236.5;
 }
 
 #img_15 {
-    background-image: url('assets/kims/15.png');
-    aspect-ratio: 1920 / 3995;
+    background-image: url('assets/mi/15.png');
+    aspect-ratio: 1920 / 2090;
 }
 
 #img_16 {
-    background-image: url('assets/kims/16.png');
-    aspect-ratio: 1920 / 1080;
+    background-image: url('assets/mi/16.png');
+    aspect-ratio: 1920 / 3440.69;
 }
 
 #img_17 {
-    background-image: url('assets/kims/17.png');
-    aspect-ratio: 1920 / 3468;
+    background-image: url('assets/mi/17.png');
+    aspect-ratio: 1920 / 2476.68;
 }
 
 #img_18 {
-    background-image: url('assets/kims/18.png');
-    aspect-ratio: 1920 / 1080;
+    background-image: url('assets/mi/18.png');
+    aspect-ratio: 1920 / 3339.4;
 }
 
 #img_19 {
-    background-image: url('assets/kims/19.png');
+    background-image: url('assets/mi/19.png');
     aspect-ratio: 1920 / 1080;
 }
+
+#img_20 {
+    background-image: url('assets/mi/20.png');
+    aspect-ratio: 1920 / 1080;
+}
+
+#img_21 {
+    background-image: url('assets/mi/21.png');
+    aspect-ratio: 1920 / 2054;
+}
+
+#img_22 {
+    background-image: url('assets/mi/22.png');
+    aspect-ratio: 1920 / 2005;
+}
+
+#img_23 {
+    background-image: url('assets/mi/23.png');
+    aspect-ratio: 1920 / 1396;
+}
+
+#img_24 {
+    background-image: url('assets/mi/24.png');
+    aspect-ratio: 1920 / 1080;
+}
+
+#img_25 {
+    background-image: url('assets/mi/25.png');
+    aspect-ratio: 1920 / 1080;
+}
+
+
+
+
+
+
 
 
 .footer {
